@@ -16,8 +16,9 @@
 
   <body>
     <!-- header -->
-    <header>
-      <nav>
+    <header class="header">
+      <div class="container">
+      <nav class="navigation">
         <a href="/" class="logo"> <span class="logo-text">Web</span>Studio </a>
         <ul class="nav-link">
           <li class="nav-item">
@@ -31,6 +32,7 @@
           </li>
         </ul>
       </nav>
+      <div class="navigation">
       <ul class="contact-link">
         <li class="contact-item">
           <a href="mailto:info@devstudio.com" class="contact-item-link"> info@devstudio.com</a>
@@ -39,16 +41,19 @@
           <a href="tel:+380961111111" class="contact-item-link"> +38 096 111 11 11</a>
         </li>
       </ul>
+      </div>
+    </div>
     </header>
     <!-- main -->
     <main>
       <h1 class="advantages-hidden">Портфолио</h1>
       <!-- Filter -->
       <section class="filter">
+        <div class="container">
         <h2 class="advantages-hidden">варианты фильтра</h2>
         <ul class="filter-link">
           <li>
-            <button type="button" class="portfolio-btm">Все</button>
+            <button type="button" class="portfolio-btm"><span>Все</span></button>
           </li>
           <li>
             <button type="button" class="portfolio-btm">Веб-сайты</button>
@@ -63,10 +68,12 @@
             <button type="button" class="portfolio-btm">Маркетинг</button>
           </li>
         </ul>
+      </div>
       </section>
 
       <!-- Examples -->
       <section class="examples">
+        <div class="container">
         <h2 class="advantages-hidden">Примеры</h2>
         <ul class="examples-link">
           <li class="exampled-item">
@@ -187,10 +194,13 @@
             </a>
           </li>
         </ul>
+      </div>
       </section>
+
     </main>
     <!-- footer -->
     <footer class="footer-base">
+      <div class="container">
       <a href="/" class="footer-logo"> <span class="footer-logo-text">Web</span>Studio </a>
       <address class="footer-contact">
         <ul class="footer-link">
@@ -205,6 +215,7 @@
           </li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>
