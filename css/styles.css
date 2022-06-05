@@ -73,14 +73,6 @@ section {
   margin: 0 auto;
 }
 
-.box-portfolio {
-  background-image:none;
-  background-position: center center;
-  width: 370px;
-  height: 294px;
-  background-size: cover;
-}
-
 /** 
 |----------------| 
 |сетка на flex-ах|
@@ -293,16 +285,8 @@ section {
   display: flex;
 }
 
-.features-item {
-  width: 370px;
-}
-
 .features-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.features-item-img {
-  height: 294px;
 }
 
 /* ----------------------наша команда -------------------*/
@@ -349,10 +333,6 @@ section {
 
 .personal-item {
   padding-bottom: 30px;
-}
-
-.personal-item-img {
-  height: 260px;
 }
 
 /* -------------------FOOTER -----------------------*/
@@ -415,7 +395,7 @@ section {
 
 /*--------------------------------------- PORTFOLIO -----------------------------*/
 .filter {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .filter-links {
@@ -496,6 +476,3 @@ section {
   margin-bottom: 0;
 }
 
-.examples-item-img {
-  height: 294px;
-}
