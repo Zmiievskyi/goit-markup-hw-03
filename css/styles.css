@@ -27,6 +27,14 @@ p {
   list-style: none;
 }
 
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
 p:last-child {
   margin: 0;
 }
@@ -51,12 +59,26 @@ section {
   text-decoration: none;
   color: currentColor;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* контейнер */
 .container {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
   margin: 0 auto;
+}
+
+.box-portfolio {
+  background-image:none;
+  background-position: center center;
+  width: 370px;
+  height: 294px;
+  background-size: cover;
 }
 
 /** 
@@ -115,6 +137,10 @@ section {
   margin-right: 50px;
 }
 
+.nav-item-link.current {
+  color: #2196f3;
+}
+
 .nav-item-link {
   font-weight: 500;
   font-size: 14px;
@@ -136,6 +162,10 @@ section {
   display: flex;
   margin-left: auto;
   margin-bottom: 0;
+}
+
+.contact-item-link.current {
+  color: #2196f3;
 }
 
 .contact-item {
@@ -199,23 +229,15 @@ section {
 }
 .hero-btm:hover,
 .hero-btm:focus {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: white;
-  border: none;
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 /* -----------------список преимуществ(BENEFITS) ----------*/
-.section-benefits {
-  padding-top: 94px;
+.benefits {
   padding-bottom: 47px;
 }
+
 .hidden {
   position: absolute;
   white-space: nowrap;
@@ -252,9 +274,8 @@ section {
 }
 
 /* --------------------чем мы занимаемся (features)----------- */
-.section-features {
+.features {
   padding-top: 47px;
-  padding-bottom: 94px;
 }
 
 .features-title {
@@ -285,11 +306,10 @@ section {
 }
 
 /* ----------------------наша команда -------------------*/
-.section-personal {
+.personal {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+ }
+
 .personal-title {
   font-weight: 700;
   font-size: 36px;
@@ -352,10 +372,6 @@ section {
   color: #ffffff;
 }
 
-.footer-item:not(:last-child) {
-  /* margin-bottom: 9px; */
-}
-
 .footer-logo-text {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
@@ -399,8 +415,7 @@ section {
 
 /*--------------------------------------- PORTFOLIO -----------------------------*/
 .filter {
-  padding-top: 94px;
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .filter-links {
@@ -414,6 +429,13 @@ section {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
+}
+
+.portfolio-btm.current {
+  color: white;
+  border-color: #2196f3;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .portfolio-btm {
@@ -439,34 +461,41 @@ section {
 
 /* -----------------примеры--------------- */
 .examples {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
-.exampled-tittle {
+.examples-tittle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
 
-  margin-top: 20px;
+  
+}
+
+.examples-container {
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-top: none;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 24px;
 }
 
-.exampled-text {
+.examples-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
 
-  padding-left: 24px;
   margin-top: 4px;
+  margin-bottom: 0;
 }
 
-.exampled-item {
-  padding-bottom: 20px;
-}
-.exampled-item-img {
+.examples-item-img {
   height: 294px;
 }
