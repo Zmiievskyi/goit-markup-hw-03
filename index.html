@@ -14,8 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!--------------------CSS------------- -->
-    <link rel="stylesheet" href="./css/styles.css" />
     <!----------------- Modern-normalize -------------->
     <link
       rel="stylesheet"
@@ -24,10 +22,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--------------------CSS------------- -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <!------------- HEADER ------------------>
+    <!-- ----------- HEADER ---------------- -->
     <header class="header">
       <div class="container">
         <nav class="navigation">
@@ -57,7 +57,7 @@
         </nav>
       </div>
     </header>
-    <!----------------- HERO ------------->
+    <!-- --------------- HERO ----------- -->
     <main>
       <section class="section-hero">
         <div class="container">
@@ -66,7 +66,7 @@
         </div>
       </section>
 
-      <!----------------список преимуществ (BENEFITS) -------------->
+      <!-- --------------список преимуществ (BENEFITS) ------------ -->
       <section class="section benefits">
         <div class="container">
           <h2 class="hidden">список преимуществ</h2>
@@ -99,7 +99,7 @@
         </div>
       </section>
 
-      <!---------------- чем мы занимаемся (features)  ------------->
+      <!-- -------------- чем мы занимаемся (features)  ----------- -->
       <section class="section features">
         <div class="container">
           <h2 class="features-title">Чем мы занимаемся</h2>
@@ -127,19 +127,14 @@
             </li>
             <li class="features-item">
               <a href="">
-                <img 
-                src="./images/link3.jpg" 
-                width="370" 
-                alt="дизайн" 
-                class="features-item-img" 
-                />
+                <img src="./images/link3.jpg" width="370" alt="дизайн" class="features-item-img" />
               </a>
             </li>
           </ul>
         </div>
       </section>
 
-      <!--------------------- наша команда -------------------->
+      <!-- ------------------- наша команда ------------------ -->
       <section class="section personal">
         <div class="container">
           <h2 class="personal-title">Наша команда</h2>
@@ -151,8 +146,10 @@
                 alt="foto Igor"
                 class="personal-item-img"
               />
-              <h3 class="personal-title-text">Игорь Демьяненко</h3>
-              <p class="personal-text">Product Designer</p>
+              <div class="personal-wrapper">
+                <h3 class="personal-title-text">Игорь Демьяненко</h3>
+                <p class="personal-text">Product Designer</p>
+              </div>
             </li>
             <li class="personal-item card-set-item">
               <img
@@ -161,8 +158,10 @@
                 alt="foto Olga"
                 class="personal-item-img"
               />
-              <h3 class="personal-title-text">Ольга Репина</h3>
-              <p class="personal-text">Frontend Developer</p>
+              <div class="personal-wrapper">
+                <h3 class="personal-title-text">Ольга Репина</h3>
+                <p class="personal-text">Frontend Developer</p>
+              </div>
             </li>
             <li class="personal-item card-set-item">
               <img
@@ -171,8 +170,10 @@
                 alt="foto Nikolay"
                 class="personal-item-img"
               />
-              <h3 class="personal-title-text">Николай Тарасов</h3>
-              <p class="personal-text">Marketing</p>
+              <div class="personal-wrapper">
+                <h3 class="personal-title-text">Николай Тарасов</h3>
+                <p class="personal-text">Marketing</p>
+              </div>
             </li>
             <li class="personal-item card-set-item">
               <img
@@ -181,14 +182,26 @@
                 alt="foto Mihail"
                 class="personal-item-img"
               />
-              <h3 class="personal-title-text">Михаил Ермаков</h3>
-              <p class="personal-text">UI Designer</p>
+              <div class="personal-wrapper">
+                <h3 class="personal-title-text">Михаил Ермаков</h3>
+                <p class="personal-text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+      <section class="client">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
     </main>
-    <!---------------------- FOOTER------------------ -->
+    <!-- -------------------- FOOTER------------------ -->
     <footer class="footer-base">
       <div class="container">
         <a href="./index.html" class="footer-logo">
@@ -200,12 +213,10 @@
               <p class="footer-item-text">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
             <li class="footer-item">
-              <a href="mailto:info@example.com" 
-              class="footer-item-link link"> info@example.com</a>
+              <a href="mailto:info@example.com" class="footer-item-link link"> info@example.com</a>
             </li>
             <li class="footer-item">
-              <a href="tel:+380991111111" 
-              class="footer-item-link link"> +38 099 111 11 11</a>
+              <a href="tel:+380991111111" class="footer-item-link link"> +38 099 111 11 11</a>
             </li>
           </ul>
         </address>

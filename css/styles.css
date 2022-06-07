@@ -21,9 +21,8 @@ h3,
 h4,
 ul,
 p {
-  margin-top: 0;
+  margin: 0;
   padding: 0;
-  box-sizing: border-box;
   list-style: none;
 }
 
@@ -39,10 +38,10 @@ p:last-child {
   margin: 0;
 }
 
-section {
+/* section {
   outline: 2px solid red;
   outline-offset: -2px;
-}
+} */
 
 /* задаем общие классы */
 .header {
@@ -204,7 +203,6 @@ section {
 }
 
 .hero-btm {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -214,7 +212,6 @@ section {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-
   margin-top: 30px;
   width: 200px;
   height: 50px;
@@ -254,6 +251,7 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color);
+  margin-bottom: 10px;
 }
 
 .benefits-item-text {
@@ -261,8 +259,6 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-
-  margin-top: 10px;
 }
 
 /* --------------------чем мы занимаемся (features)----------- */
@@ -278,7 +274,7 @@ section {
   letter-spacing: 0.03em;
   color: var(--text-color);
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .features-links {
@@ -292,7 +288,7 @@ section {
 /* ----------------------наша команда -------------------*/
 .personal {
   background-color: #f5f4fa;
- }
+}
 
 .personal-title {
   font-weight: 700;
@@ -302,8 +298,7 @@ section {
   letter-spacing: 0.03em;
   color: var(--text-color);
 
-  padding-bottom: 50px;
-  margin: 0;
+  margin-bottom: 50px;
 }
 
 .personal-links {
@@ -317,7 +312,6 @@ section {
   letter-spacing: 0.03em;
   color: var(--text-color);
 
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -332,7 +326,11 @@ section {
 }
 
 .personal-item {
-  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.personal-wrapper {
+  padding: 30px 0;
 }
 
 /* -------------------FOOTER -----------------------*/
@@ -363,11 +361,7 @@ section {
   color: #2196f3;
 }
 
-.footer-links {
-  margin-top: 20px;
-}
-
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -378,6 +372,10 @@ section {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.footer-contact {
+  margin-top: 20px;
 }
 
 .footer-item-link {
@@ -393,7 +391,7 @@ section {
   color: #2196f3;
 }
 
-/*--------------------------------------- PORTFOLIO -----------------------------*/
+/*----------------------------- PORTFOLIO -----------------------*/
 .filter {
   padding-bottom: 50px;
 }
@@ -401,7 +399,7 @@ section {
 .filter-links {
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
@@ -440,9 +438,6 @@ section {
 }
 
 /* -----------------примеры--------------- */
-.examples {
-  padding-top: 0;
-}
 
 .examples-tittle {
   font-weight: 700;
@@ -450,19 +445,17 @@ section {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-color);
-
-  
 }
 
 .examples-container {
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  border-top: none;
 
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 .examples-text {
@@ -475,4 +468,3 @@ section {
   margin-top: 4px;
   margin-bottom: 0;
 }
-
